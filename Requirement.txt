@@ -1,0 +1,9 @@
+openpyxl
+pandas
+numpy
+selenium
+configparser
+pathlib
+pytest
+pytest-html
+Pyselenium
