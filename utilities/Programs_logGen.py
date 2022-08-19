@@ -2,6 +2,10 @@ import logging
 from os import remove
 from os.path import exists
 
+from PageObjects.Dashboard_Page import Dashboard_Objects
+
+logfiles = Dashboard_Objects()
+
 
 def setup_logger(logger_name, log_file, level=logging.WARNING):
     # Erase log if already exists
@@ -21,4 +25,4 @@ def setup_logger(logger_name, log_file, level=logging.WARNING):
 
 
 if __name__ == '__main__':
-    setup_logger('log_pl', '../Logs/test.log', logging.DEBUG)
+    setup_logger('log_pl',logfiles.program_logfile, logging.DEBUG)

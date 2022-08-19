@@ -1,6 +1,4 @@
-import configparser
 
-import pytest
 from selenium import webdriver
 
 from get_directory import DirectoryPath
